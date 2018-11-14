@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        Home
+        Contact
     </v-container>
 </template>
 

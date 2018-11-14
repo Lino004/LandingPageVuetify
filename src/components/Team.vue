@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        Home
+        Team
     </v-container>
 </template>
 

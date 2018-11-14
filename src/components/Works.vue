@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        Home
+        Works
     </v-container>
 </template>
 

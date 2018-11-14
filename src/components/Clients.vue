@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        Home
+        Clients
     </v-container>
 </template>
 

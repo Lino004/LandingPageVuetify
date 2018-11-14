@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        Home
+        Services
     </v-container>
 </template>
 
