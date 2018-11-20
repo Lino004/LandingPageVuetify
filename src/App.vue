@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import Test from './components/Test'
 import Home from './components/Home'
 import About from './components/About'
 import Services from './components/Services'
@@ -26,7 +25,7 @@ import Contact from './components/Contact'
 export default {
   name: 'App',
   components: {
-    Test, Home, About, Services, Works, Clients, Team, Contact
+    Home, About, Services, Works, Clients, Team, Contact
   },
   data () {
     return {
