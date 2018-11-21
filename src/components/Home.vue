@@ -2,9 +2,43 @@
     <v-content id="parallax" @scroll.native="scroll()" style="background-position-y: 0">
         <div id="overlay__parallax"></div>
         <div class="position">
-            <h1 class="title" :class="color">
-                Hello World
-            </h1>
+            
+            <!-- Main container -->
+            <nav class="level is-mobile">
+                <!-- Left side -->
+                <div class="level-left">
+                    <img class="ma-3" src="../assets/logo.png" alt="HomePage" height="70" width="70">
+                </div>
+
+                <!-- Right side -->
+                <div class="level-right">
+                    <v-btn class="ma-3" color="rgba(255, 0, 0, 0.0)" dark depressed 
+                      @click.stop="drawer = !drawer">
+                        MENU<v-icon dark right>menu</v-icon>
+                    </v-btn>
+                    <v-navigation-drawer v-model="drawer" absolute temporary right dark
+                      width="250" style="background-color: #0C0C0C">
+                        <v-list>
+                            <v-list-tile>
+                                <v-list-tile-title>Navigation</v-list-tile-title>
+                            </v-list-tile>
+                        </v-list>
+
+                        <v-list dense>
+
+                            <v-list-tile v-for="item in items" :key="item.title">
+                                <v-list-tile-action>
+                                    <v-icon>{{ item.icon }}</v-icon>
+                                </v-list-tile-action>
+
+                                <v-list-tile-content>
+                                    <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                                </v-list-tile-content>
+                            </v-list-tile>
+                        </v-list>
+                    </v-navigation-drawer>
+                </div>
+            </nav>
         </div>
     </v-content>
 </template>
@@ -13,7 +47,12 @@
 export default {
     data (){
         return{
-            color: 'white'
+            color: 'white',
+            items: [
+                { title: 'Home', icon: 'dashboard' },
+                { title: 'About', icon: 'question_answer' }
+            ],
+            drawer: null
         }
     },
     methods : {
@@ -46,7 +85,7 @@ export default {
 #parallax{
     margin: 0;
     padding: 0;
-    background: url("../assets/hero-bg.jpg") no-repeat fixed;
+    background: url("../assets/hero-bg.jpg") no-repeat center fixed;
     background-size: cover;
     height: 100%;
 }
