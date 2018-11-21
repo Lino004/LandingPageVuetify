@@ -72,7 +72,7 @@ export default {
 .service-block {
   padding: 20px; }
   .service-block .icon {
-    color: #E52E2D;
+    color: #FB0B3F;
     font-size: 40px;
     opacity: 0;
     -webkit-transform: translateY(-20px);

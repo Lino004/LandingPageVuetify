@@ -1,6 +1,6 @@
 <template>
     <section id='about' class="s-about">
-
+<div class="overlay"></div>
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead subhead--dark">Hello There</h3>
@@ -51,12 +51,26 @@ export default {
 
 <style>
 .s-about {
-    padding-top: 16.2rem;
+    height: 700px;
+    padding-top: 11.2rem;
+    padding-left: 10em;
     padding-bottom: 9rem;
-    background-color: #ff0000a2;
+    background-color: rgba(251, 11, 63, 0.384);
+    background: url("../../images/sample-image.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
     color: #010507;
     position: relative;
     text-align: center;
+}
+.s-about .overlay{
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 11, 63, 0.384);
 }
 
 .s-about .section-header.has-bottom-sep::before {
@@ -105,7 +119,6 @@ export default {
 
 .stats h5 {
     font-family: "montserrat-semibold", sans-serif;
-    margin-top: 1.8rem;
     color: #000000;
     font-size: 1.8rem;
     line-height: 1.333;

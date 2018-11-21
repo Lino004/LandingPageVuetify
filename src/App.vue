@@ -21,11 +21,11 @@ import Works from './components/Works'
 import Clients from './components/Clients'
 import Team from './components/Team'
 import Contact from './components/Contact'
-
+import Footer from './components/Footer'
 export default {
   name: 'App',
   components: {
-    Home, About, Services, Works, Clients, Team, Contact
+    Home, About, Services, Works, Clients, Team, Contact, Footer
   },
   data () {
     return {

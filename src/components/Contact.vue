@@ -109,21 +109,7 @@
             </div> <!-- end contact-secondary -->
 
         </div> <!-- end contact-content -->
-    <!-- footer
-        ================================================== -->
-        <footer>
-                <div class="col-twelve">
-                    <div class="copyright">
-                        <span>© Copyright Creative Nation 2018</span> 
-                            
-                    </div>
-
-                    <div class="go-top">
-                        <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-
-        </footer> <!-- end footer -->
+ 
     </section> <!-- end s-contact -->
 
 
@@ -179,7 +165,7 @@ export default {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #ff6163;
+    background: #FB0B3F;
 }
 
 .s-contact .form-field label::after {
@@ -190,14 +176,14 @@ export default {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #ff6163;
+    border-right: 5px solid #FB0B3F;
 }
 
 .contact__line {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #ff6163;
+    background-color: #FB0B3F;
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -219,12 +205,12 @@ export default {
 .contact-content h3 {
     margin-top: 0;
     margin-bottom: 6.6rem;
-    color:#ff6163;
+    color:#FB0B3F;
 }
 
 .contact-content h5 {
     margin-top: 0;
-    color: #ff6163;
+    color: #FB0B3F;
 }
 
 .contact-content input[type="email"],
@@ -251,7 +237,7 @@ export default {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid #ff6163;
+    border-bottom: 1px solid #FB0B3F;
 }
 
 .contact-content button,
@@ -342,7 +328,7 @@ export default {
 
 .contact-social li a:hover, 
 .contact-social li a:focus {
-    color: #ff6163;
+    color: #FB0B3F;
 }
 
 .contact-social li:last-child {
@@ -361,11 +347,11 @@ export default {
 }
 
 .message-warning {
-    color: #ff6163;
+    color: #FB0B3F;
 }
 
 .message-success {
-    color: #ff6163;
+    color: #FB0B3F;
 }
 
 .message-warning i, .message-success i {
@@ -501,7 +487,7 @@ export default {
 
 @media only screen and (max-width: 800px) {
     .contact-content h3 {
-        color: #ff6163;
+        color: #FB0B3F;
         text-align: center;
     }
 }

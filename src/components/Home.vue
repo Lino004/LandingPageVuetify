@@ -1,13 +1,14 @@
 <template>
  
 <section id="hero">
+    <div class="overlay"></div>
     <div id="particles-js">
         <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                 <div class="hero-content">
                     <div class="row home-content__main">
 
-                <h3>Welcom to Creative Nation</h3>
+                <h4>Welcom to Creative Nation</h4>
 
                 <h1>
                     We are a creative group <br>
@@ -59,10 +60,11 @@
 </template>
 
 <script>
+var count_particles, stats, update;
 export default {
     data() {
         return {
-           var: count_particles, stats, update
+           
         }
     },
     methods: {
@@ -81,8 +83,16 @@ export default {
   background-attachment: fixed;
   height: 20%;
   position: relative;
-  z-index: 1; }
-
+  z-index: 1; 
+  padding-top: 18em;}
+#hero .overlay{
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+}
 #particles-js {
   width: 100%;
   height: 100%; }
@@ -99,7 +109,7 @@ export default {
     color: #fff;
     margin-top: 30px;
     margin-bottom: 10px; }
-  .hero-content h2 {
+  .hero-content h4 {
     font-size: 30px;
     color: #bfbfbf; }
 
@@ -111,6 +121,11 @@ ul.disc li {
     list-style: none;
     padding: 0 0 0 .8rem;
     position: relative;
+}
+.btn--stroke{
+    margin-top:12em;
+    margin-right: 4em;
+    border: #bfbfbf solid 1px;
 }
 
 </style>
