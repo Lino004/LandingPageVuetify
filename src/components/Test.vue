@@ -1,40 +1,35 @@
 <template>
-    <section>
-        <v-parallax :src="require('@/assets/hero-bg-r1.jpg')" height="900" jumbotron>
-
-            <v-toolbar color="rgba(0, 0, 0, 0.0)" class="elevation-0" dark>
-
-                <v-toolbar-side-icon></v-toolbar-side-icon>
-                <v-toolbar-title>Title</v-toolbar-title>
-                <v-spacer></v-spacer>
-                <v-toolbar-items class="hidden-sm-and-down">
-                    <v-btn flat>Link One</v-btn>
-                    <v-btn flat>Link Two</v-btn>
-                    <v-btn flat>Link Three</v-btn>
-                </v-toolbar-items>
-
-            </v-toolbar>
-            <div id="overlay__parallax"></div>
-            <v-layout align-start justify-center column fill-height>
-
-                <div style="height: 30%">
-                    <h1 class="display-2 font-weight-thin mb-3">
-                    We are a creative group 
-                    of people who design 
-                    influential brands and 
-                    digital experiences.
-                </h1>
-                <h4 class="subheading">Build your application today!</h4>
-                </div>
-
-            </v-layout>
-            
-        </v-parallax>
-    </section>
+    <v-content id="parallax" @scroll.native="scroll()" style="background-position-y: 0">
+        <div id="overlay__parallax"></div>
+        <div class="position">
+            <h1 class="title" :class="color">
+                Hello World
+            </h1>
+        </div>
+    </v-content>
 </template>
 
 <script>
-export default {};
+export default {
+    data (){
+        return{
+            color: 'white'
+        }
+    },
+    methods : {
+        scroll () {
+            this.color = 'blue'
+            var elem = document.getElementById('parallax')
+            elem.style.backgroundPositionY = '-' + window.scrollY + 'px'
+        }
+    },
+    created (){
+        window.addEventListener("scroll", this.scroll)
+    },
+    destroyed (){
+        window.removeEventListener("scroll", this.scroll)
+    }
+};
 </script>
 
 <style>
@@ -46,6 +41,19 @@ export default {};
     height: 100%;
     opacity: .6;
     background-color: #000000;
-    z-index: -1;
+    z-index: 0;
+}
+#parallax{
+    margin: 0;
+    padding: 0;
+    background: url("../assets/hero-bg.jpg") no-repeat fixed;
+    background-size: cover;
+    height: 100%;
+}
+.position{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 </style>
