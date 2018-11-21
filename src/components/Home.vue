@@ -3,14 +3,14 @@
         <div id="overlay__parallax"></div>
         <div class="position">
             
-            <!-- Main container -->
+            <!-- Top bar -->
             <nav class="level is-mobile">
-                <!-- Left side -->
+                <!-- Icône of site -->
                 <div class="level-left">
                     <img class="ma-3" src="../assets/logo.png" alt="HomePage" height="70" width="70">
                 </div>
 
-                <!-- Right side -->
+                <!-- Menu of site -->
                 <div class="level-right">
                     <v-btn class="ma-3" color="rgba(255, 0, 0, 0.0)" dark depressed 
                       @click.stop="drawer = !drawer">
@@ -50,7 +50,8 @@ export default {
             color: 'white',
             items: [
                 { title: 'Home', icon: 'dashboard' },
-                { title: 'About', icon: 'question_answer' }
+                { title: 'About', icon: 'question_answer' },
+                { title: 'Service', icon: 'question_answer' }
             ],
             drawer: null
         }
