@@ -86,7 +86,7 @@ export default {
 #parallax{
     margin: 0;
     padding: 0;
-    background: url("../assets/hero-bg.jpg") no-repeat center fixed;
+    background: url("http://www.bricho.com/demo/brian/with-particles/img/hero8.jpg") no-repeat center fixed;
     background-size: cover;
     height: 100%;
 }
