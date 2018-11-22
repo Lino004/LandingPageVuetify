@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <v-content>
-      <Test/>
       <Home/>
       <About/>
       <Services/>
@@ -9,6 +8,7 @@
       <Clients/>
       <Team/>
       <Contact/>
+      <Footer/>
     </v-content>
   </v-app>
 </template>

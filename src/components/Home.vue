@@ -82,7 +82,6 @@ export default {
   background-size: cover;
   background-attachment: fixed;
   height: 20%;
-  position: relative;
   z-index: 1; 
   padding-top: 18em;}
 #hero .overlay{
